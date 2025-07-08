@@ -1,0 +1,50 @@
+/* Fundo com imagem personalizada */
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Cinzel', serif;
+
+  background-image: url('background-homepage.png'); /* coloque aqui o caminho da sua imagem */
+  background-size: cover;        /* cobre toda a tela */
+  background-position: center;   /* centraliza a imagem */
+  background-attachment: fixed;  /* deixa o fundo fixo no scroll */
+  background-repeat: no-repeat;  /* evita repetição da imagem */
+}
+
+/* Conteúdo centralizado com fundo escuro translúcido */
+.conteudo {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* overlay escuro */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.titlebar {
+  max-width: 80rem;          /* max-w-7xl = 1280px = 80rem */
+  margin-left: auto;         /* mx-auto = horizontal centering */
+  margin-right: auto;
+  padding-left: 1rem;        /* px-4 = 1rem (16px) horizontal padding */
+  padding-right: 1rem;
+  padding-top: 1rem;         /* py-4 = 1rem (16px) vertical padding */
+  padding-bottom: 1rem;
+  display: flex;             /* flex container */
+  justify-content: space-between;  /* space between children */
+  align-items: center;       /* center-align vertically */
+  background-color: rgb(26, 24, 37);
+}
+
+.heading {
+  font-size: 1.5rem;       /* text-2xl = 24px */
+  font-weight: 700;        /* font-bold */
+  letter-spacing: 0.025em; /* tracking-wide */
+  color: rgb(255, 217, 0);
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
