@@ -10,24 +10,36 @@ body {
   background-position: center;   /* centraliza a imagem */
   background-attachment: fixed;  /* deixa o fundo fixo no scroll */
   background-repeat: no-repeat;  /* evita repetição da imagem */
+  background-color: black;
 }
 
 /* Conteúdo centralizado com fundo escuro translúcido */
-.conteudo {
-  max-width: 800px;
-  margin: 80px auto;
-  padding: 40px;
+.overlayBackground {
+  position: relative;
   background-color: rgba(0, 0, 0, 0.6); /* overlay escuro */
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  text-align: center;
 }
 
-.titlebar {
-  max-width: 80rem;          /* max-w-7xl = 1280px = 80rem */
+.conteudoSobreOverlay {
+  position: relative;
+  z-index: 10; /* garante que o conteúdo fique acima do overlay */
+
+}
+
+.hoverHeader
+{
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2d3748; /* Fundo escuro com opacidade */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.titleBar {
   margin-left: auto;         /* mx-auto = horizontal centering */
   margin-right: auto;
-  padding-left: 1rem;        /* px-4 = 1rem (16px) horizontal padding */
+  padding-left: 1rem;       /* px-4 = 1rem (16px) horizontal padding */
   padding-right: 1rem;
   padding-top: 1rem;         /* py-4 = 1rem (16px) vertical padding */
   padding-bottom: 1rem;
@@ -37,14 +49,39 @@ body {
   background-color: rgb(26, 24, 37);
 }
 
-.heading {
-  font-size: 1.5rem;       /* text-2xl = 24px */
-  font-weight: 700;        /* font-bold */
-  letter-spacing: 0.025em; /* tracking-wide */
-  color: rgb(255, 217, 0);
+/* Área da logo + título */
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+.logoImg{
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.logoText{
+  color:white;
+  font-size: larger;
+}
+
+.logoText:hover {
+  color: #ffb700;            /* cor laranja ao passar o mouse */
+}
+
+nav {
+  display: flex;              /* flex container para os links */
+  gap: 1rem;                  /* espaçamento entre os links */
+}
+
+.linkNav {
+  color: white;              /* cor do texto */
+  text-decoration: none;     /* remove o sublinhado */
+  transition: color 0.3s;    /* transição suave para a cor */
+}
+
+.linkNav:hover {
+  color: #ffb700;            /* cor amarela ao passar o mouse */
 }

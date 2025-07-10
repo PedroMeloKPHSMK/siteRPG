@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Codex RPG - Forje sua Lenda</title>
+  <title>Codex Elyvus RPG</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet" />
@@ -11,78 +11,83 @@
   
 </head>
 <body>
+  <div class="overlayBackground">
+    <div class="conteudoSobreOverlay">
+      <!-- Header -->
+      <header class="hoverHeader">
+        <div class="titleBar">
+          <div class="logoArea">
+          <img src="cdXico.png" class="logoImg">
+          <a href="/" class="logoText">Codex Elyvus RPG</a>
+          </div>
+          <nav>
+            <a href="/" class="linkNav">Início</a>
+            <a href="/classes" class="linkNav">Classes</a>
+            <a href="/itens" class="linkNav">Itens</a>
+            <a href="/ambientes" class="linkNav">Ambientes</a>
+            <a href="/regras" class="linkNav">Regras</a>
+            <a href="/bestiario" class="linkNav">Bestiário</a>
+            <a href="/sobre" class="linkNav">Sobre</a>
+          </nav>
+        </div>
+      </header>
 
-  <!-- Header -->
-  <header class="bg-gray-800 shadow-md">
-    <div class="titlebar">
-      <h1 class="heading">Codex Elyvus RPG</h1>
-      <nav class="space-x-4">
-        <a href="/" class="hover:text-yellow-400">Início</a>
-        <a href="/classes" class="hover:text-yellow-400">Classes</a>
-        <a href="/itens" class="hover:text-yellow-400">Itens</a>
-        <a href="/ambientes" class="hover:text-yellow-400">Ambientes</a>
-        <a href="/regras" class="hover:text-yellow-400">Regras</a>
-        <a href="/bestiario" class="hover:text-yellow-400">Bestiário</a>
-        <a href="/sobre" class="hover:text-yellow-400">Sobre</a>
-      </nav>
+      <!-- Hero Section -->
+      <section class="bg-hero-pattern bg-cover bg-center py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-5xl font-bold text-yellow-400 mb-6">Forje sua Lenda</h2>
+          <p class="text-lg mb-8 text-gray-300">Um universo onde clima, monstros e magia moldam o destino dos heróis. Explore terras selvagens, enfrente horrores antigos e escreva sua própria história.</p>
+          <div class="space-x-4">
+            <a href="/regras" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-semibold">📜 Ver Regras</a>
+            <a href="/classes" class="bg-transparent border border-yellow-400 hover:bg-yellow-500 text-yellow-400 hover:text-black px-6 py-3 rounded-full font-semibold">🎲 Criar Personagem</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seções de Destaque -->
+      <section class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center mb-10 text-yellow-300">Explore o Mundo de Codex</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <a href="/classes" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
+            <h4 class="text-xl font-bold mb-2">🧙‍♂️ Classes</h4>
+            <p>Conheça todas as classes disponíveis, de místicos a guerreiros selvagens.</p>
+          </a>
+
+          <a href="/itens" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
+            <h4 class="text-xl font-bold mb-2">🛡️ Itens</h4>
+            <p>Descubra armas, armaduras e relíquias com poderes únicos.</p>
+          </a>
+
+          <a href="/ambientes" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
+            <h4 class="text-xl font-bold mb-2">🌍 Ambientes</h4>
+            <p>Terrenos, regiões e eventos climáticos que influenciam o jogo.</p>
+          </a>
+
+          <a href="/bestiario" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
+            <h4 class="text-xl font-bold mb-2">🧟 Bestiário</h4>
+            <p>Enfrente monstros aterradores e criaturas míticas.</p>
+          </a>
+
+          <a href="/regras" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
+            <h4 class="text-xl font-bold mb-2">📘 Regras</h4>
+            <p>Conheça o sistema único que rege batalhas, magia e evolução.</p>
+          </a>
+
+          <a href="/sobre" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
+            <h4 class="text-xl font-bold mb-2">📜 Sobre o Projeto</h4>
+            <p>Saiba mais sobre os criadores, propósito e futuro do Codex RPG.</p>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Rodapé -->
+      <footer class="bg-gray-800 text-gray-400 text-sm py-6 px-4 text-center">
+        <p>&copy; 2025 Codex Elyvus RPG. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Pedro Melo.</p>
+      </footer>
     </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-hero-pattern bg-cover bg-center py-20 px-4 text-center">
-    <div class="max-w-3xl mx-auto">
-      <h2 class="text-5xl font-bold text-yellow-400 mb-6">Forje sua Lenda</h2>
-      <p class="text-lg mb-8 text-gray-300">Um universo onde clima, monstros e magia moldam o destino dos heróis. Explore terras selvagens, enfrente horrores antigos e escreva sua própria história.</p>
-      <div class="space-x-4">
-        <a href="/regras" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-semibold">📜 Ver Regras</a>
-        <a href="/classes" class="bg-transparent border border-yellow-400 hover:bg-yellow-500 text-yellow-400 hover:text-black px-6 py-3 rounded-full font-semibold">🎲 Criar Personagem</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seções de Destaque -->
-  <section class="max-w-6xl mx-auto px-4 py-16">
-    <h3 class="text-3xl font-bold text-center mb-10 text-yellow-300">Explore o Mundo de Codex</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <a href="/classes" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
-        <h4 class="text-xl font-bold mb-2">🧙‍♂️ Classes</h4>
-        <p>Conheça todas as classes disponíveis, de místicos a guerreiros selvagens.</p>
-      </a>
-
-      <a href="/itens" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
-        <h4 class="text-xl font-bold mb-2">🛡️ Itens</h4>
-        <p>Descubra armas, armaduras e relíquias com poderes únicos.</p>
-      </a>
-
-      <a href="/ambientes" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
-        <h4 class="text-xl font-bold mb-2">🌍 Ambientes</h4>
-        <p>Terrenos, regiões e eventos climáticos que influenciam o jogo.</p>
-      </a>
-
-      <a href="/bestiario" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
-        <h4 class="text-xl font-bold mb-2">🧟 Bestiário</h4>
-        <p>Enfrente monstros aterradores e criaturas míticas.</p>
-      </a>
-
-      <a href="/regras" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
-        <h4 class="text-xl font-bold mb-2">📘 Regras</h4>
-        <p>Conheça o sistema único que rege batalhas, magia e evolução.</p>
-      </a>
-
-      <a href="/sobre" class="bg-gray-800 hover:bg-gray-700 rounded-xl p-6 shadow-lg transition">
-        <h4 class="text-xl font-bold mb-2">📜 Sobre o Projeto</h4>
-        <p>Saiba mais sobre os criadores, propósito e futuro do Codex RPG.</p>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer class="bg-gray-800 text-gray-400 text-sm py-6 px-4 text-center">
-    <p>&copy; 2025 Codex Elyvus RPG. Todos os direitos reservados.</p>
-    <p>Desenvolvido por Pedro Melo.</p>
-  </footer>
-
+  </div>
 </body>
 </html>
