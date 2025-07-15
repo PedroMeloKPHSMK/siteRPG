@@ -19,7 +19,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6); /* overlay escuro */
 }
 
-.conteudoSobreOverlay {
+.overlayContentOnTop {
   position: relative;
   z-index: 10; /* garante que o conteúdo fique acima do overlay */
 
@@ -81,7 +81,64 @@ nav {
   text-decoration: none;     /* remove o sublinhado */
   transition: color 0.3s;    /* transição suave para a cor */
 }
-
 .linkNav:hover {
   color: #ffb700;            /* cor amarela ao passar o mouse */
+}
+
+.heroSection {
+  padding-top: 10rem; /* py-40 */
+  padding-bottom: 5rem; /* py-20 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+  text-align: center; /* text-center */
+}
+
+.containerCentralizer {
+  max-width: 48rem; /* 3xl = 768px = 48rem */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleHighlight {
+  font-size: 3rem;       /* text-5xl → 3rem = 48px */
+  font-weight: 700;      /* font-bold */
+  color: #ffb700;       /* text-yellow-400 → amarelo do Tailwind */
+  margin-bottom: 1.5rem; /* mb-6 → 24px */
+}
+
+.paragraphHighlight {
+  font-size: 1.125rem;    /* text-lg → 18px */
+  margin-bottom: 2rem;    /* mb-8 → 32px */
+  color: #eaebec;         /* text-gray-300 (Tailwind) */
+}
+
+.firstButtons > *:not(:first-child) {
+  margin-left: 1rem; /* space-x-4 → 16px */
+}
+
+.mainButton {
+  background-color: #f59e0b;  /* bg-yellow-500 */
+  color: #000000;             /* text-black */
+  padding: 0.75rem 1.5rem;    /* py-3 = 12px, px-6 = 24px */
+  border-radius: 9999px;      /* rounded-full */
+  font-weight: 600;           /* font-semibold */
+  transition: background-color 0.3s ease;
+}
+.mainButton:hover {
+  background-color: #d94906;  /* hover:bg-yellow-600 */
+  color:#eaebec;
+}
+
+.secondButton {
+  background-color: transparent;  /* bg-yellow-500 */
+  border: 1px solid #f59e0b;  
+  color: #f59e0b;            
+  padding: 0.75rem 1.5rem;    /* py-3 = 12px, px-6 = 24px */
+  border-radius: 9999px;      /* rounded-full */
+  font-weight: 600;           /* font-semibold */
+  transition: background-color 0.3s ease;
+}
+.secondButton:hover {
+  background-color: #f59e0b;  /* hover:bg-yellow-600 */
+  color:#eaebec;
 }
