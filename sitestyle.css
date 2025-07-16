@@ -62,13 +62,20 @@ body {
   object-fit: contain;
 }
 
+.logoImg:hover {
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra suave */
+  scale: 1.1; /* aumenta ligeiramente ao passar o mouse */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transição suave */
+}
+
 .logoText{
   color:white;
   font-size: larger;
 }
 
 .logoText:hover {
-  color: #ffb700;            /* cor laranja ao passar o mouse */
+  color: #fcc203;            /* cor laranja ao passar o mouse */
 }
 
 nav {
@@ -82,7 +89,7 @@ nav {
   transition: color 0.3s;    /* transição suave para a cor */
 }
 .linkNav:hover {
-  color: #ffb700;            /* cor amarela ao passar o mouse */
+  color: #fcc203;            /* cor amarela ao passar o mouse */
 }
 
 .heroSection {
@@ -117,7 +124,7 @@ nav {
 }
 
 .mainButton {
-  background-color: #f59e0b;  /* bg-yellow-500 */
+  background-color: #fcc203;  /* bg-yellow-500 */
   color: #000000;             /* text-black */
   padding: 0.75rem 1.5rem;    /* py-3 = 12px, px-6 = 24px */
   border-radius: 9999px;      /* rounded-full */
@@ -131,14 +138,80 @@ nav {
 
 .secondButton {
   background-color: transparent;  /* bg-yellow-500 */
-  border: 1px solid #f59e0b;  
-  color: #f59e0b;            
+  border: 1px solid #fcc203;  
+  color: #fcc203;            
   padding: 0.75rem 1.5rem;    /* py-3 = 12px, px-6 = 24px */
   border-radius: 9999px;      /* rounded-full */
   font-weight: 600;           /* font-semibold */
   transition: background-color 0.3s ease;
 }
 .secondButton:hover {
-  background-color: #f59e0b;  /* hover:bg-yellow-600 */
+  background-color: #d94906;  /* hover:bg-yellow-600 */
   color:#eaebec;
+}
+
+.containerCentralizer2{
+  max-width: 72rem;       /* max-w-6xl = 1152px = 72rem */
+  margin-left: auto;      /* mx-auto = centraliza horizontalmente */
+  margin-right: auto;
+  padding-left: 1rem;     /* px-4 = 16px */
+  padding-right: 1rem;
+  padding-top: 4rem;      /* py-16 = 64px */
+  padding-bottom: 4rem;
+}
+
+.titleHighlight2 {
+  font-size: 1.875rem;     /* text-3xl → 30px */
+  font-weight: 700;        /* font-bold */
+  text-align: center;      /* text-center */
+  margin-bottom: 2.5rem;   /* mb-10 → 40px */
+  color: #fcc203;          /* text-yellow-300 */
+}
+
+.gridResponsive {
+  display: grid;
+  grid-template-columns: 1fr;        /* grid-cols-1 */
+  gap: 2rem;                          /* gap-8 → 32px */
+}
+
+@media (min-width: 640px) {          /* sm:grid-cols-2 */
+  .gridResponsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {         /* lg:grid-cols-3 */
+  .gridResponsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cardInteractive {
+  background-color: #1f2937;     /* bg-gray-800 */
+  border-radius: 0.75rem;        /* rounded-xl = 12px */
+  padding: 1.5rem;               /* p-6 = 24px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: background-color 0.3s ease;        /* transition */
+}
+
+.cardInteractive:hover {
+  background-color: #374151;     /* hover:bg-gray-700 */
+}
+
+.cardText {
+  font-size: 1.25rem;     /* text-xl → 20px */
+  font-weight: 700;       /* font-bold */
+  margin-bottom: 0.5rem;  /* mb-2 → 8px */
+}
+
+.footerText {
+  background-color: #1f2937;   /* bg-gray-800 */
+  color: #9ca3af;              /* text-gray-400 */
+  font-size: 0.875rem;         /* text-sm → 14px */
+  padding-top: 1.5rem;         /* py-6 = 24px */
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;          /* px-4 = 16px */
+  padding-right: 1rem;
+  text-align: center;          /* text-center */
 }
