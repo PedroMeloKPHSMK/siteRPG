@@ -1,0 +1,125 @@
+.cardInteractive {
+  background-color: #1f2937;     /* bg-gray-800 */
+  border-radius: 0.75rem;        /* rounded-xl = 12px */
+  padding: 1.5rem;               /* p-6 = 24px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: background-color 0.3s ease;        /* transition */
+}
+
+.cardInteractive:hover {
+  background-color: #374151;
+}
+
+.cardInteractive1 {
+  background-image: url('backMundos.png');
+  background-size: cover;        /* cobre toda a tela */
+  background-position: center;   /* centraliza a imagem */
+  background-attachment: local;  /* deixa o fundo fixo no scroll */
+  background-repeat: no-repeat;  /* evita repetição da imagem */
+  background-color: black;
+  border-radius: 0.75rem;        /* rounded-xl = 12px */
+  padding: 1.5rem;               /* p-6 = 24px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: scale 0.3s ease;        /* transition */
+}
+
+.cardInteractive1:hover {
+  background-color: #374151;     /* hover:bg-gray-700 */
+  scale: 1.05; /* aumenta ligeiramente o tamanho no hover */
+}
+
+.cardInteractive2 {
+  background-image: url('backPersonagens.png');
+  background-size: cover;        /* cobre toda a tela */
+  background-position: top;   /* centraliza a imagem */
+  background-attachment: local;  /* deixa o fundo fixo no scroll */
+  background-repeat: no-repeat;  /* evita repetição da imagem */
+  background-color: black;
+  border-radius: 0.75rem;        /* rounded-xl = 12px */
+  padding: 1.5rem;               /* p-6 = 24px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: scale 0.3s ease;        /* transition */
+}
+
+.cardInteractive2:hover {
+  background-color: #374151;     /* hover:bg-gray-700 */
+  scale: 1.05; /* aumenta ligeiramente o tamanho no hover */
+}
+
+.cardInteractive3 {
+  background-image: url('backRegras.png');
+  background-size: cover;        /* cobre toda a tela */
+  background-position: top;   /* centraliza a imagem */
+  background-attachment: local;  /* deixa o fundo fixo no scroll */
+  background-repeat: no-repeat;  /* evita repetição da imagem */
+  background-color: black;
+  border-radius: 0.75rem;        /* rounded-xl = 12px */
+  padding: 1.5rem;               /* p-6 = 24px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: scale 0.3s ease;        /* transition */
+}
+
+.cardInteractive3:hover {
+  background-color: #374151;     /* hover:bg-gray-700 */
+  scale: 1.05; /* aumenta ligeiramente o tamanho no hover */
+}
+
+.cardInteractive4 {
+  background-image: url('backItens.png');
+  background-size: cover;        /* cobre toda a tela */
+  background-position: center;   /* centraliza a imagem */
+  background-attachment: local;  /* deixa o fundo fixo no scroll */
+  background-repeat: no-repeat;  /* evita repetição da imagem */
+  background-color: black;
+  border-radius: 0.75rem;        /* rounded-xl = 12px */
+  padding: 1.5rem;               /* p-6 = 24px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: scale 0.3s ease;        /* transition */
+}
+
+.cardInteractive4:hover {
+  background-color: #374151;     /* hover:bg-gray-700 */
+  scale: 1.05; /* aumenta ligeiramente o tamanho no hover */
+}
+
+.cardInteractive5 {
+  background-image: url('backCriaturas.png');
+  background-size: cover;        /* cobre toda a tela */
+  background-position: center;   /* centraliza a imagem */
+  background-attachment: local;  /* deixa o fundo fixo no scroll */
+  background-repeat: no-repeat;  /* evita repetição da imagem */
+  background-color: black;
+  border-radius: 0.75rem;        /* rounded-xl = 12px */
+  padding: 1.5rem;               /* p-6 = 24px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: scale 0.3s ease;        /* transition */
+}
+
+.cardInteractive5:hover {
+  background-color: #374151;     /* hover:bg-gray-700 */
+  scale: 1.05; /* aumenta ligeiramente o tamanho no hover */
+}
+
+.cardInteractive6 {
+  background-image: url('backSobre.png');
+  background-size: cover;        /* cobre toda a tela */
+  background-position: center;   /* centraliza a imagem */
+  background-attachment: local;  /* deixa o fundo fixo no scroll */
+  background-repeat: no-repeat;  /* evita repetição da imagem */
+  background-color: black;
+  border-radius: 0.75rem;        /* rounded-xl = 12px */
+  padding: 1.5rem;               /* p-6 = 24px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: scale 0.3s ease;        /* transition */
+}
+
+.cardInteractive6:hover {
+  scale: 1.05; /* aumenta ligeiramente o tamanho no hover */
+}
