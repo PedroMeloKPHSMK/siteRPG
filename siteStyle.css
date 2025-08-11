@@ -203,7 +203,7 @@ nav {
 }
 
 .footerText {
-  background-color: #1f2937;   /* bg-gray-800 */
+  background-color: rgb(26, 24, 37);
   color: #9ca3af;              /* text-gray-400 */
   font-size: 0.875rem;         /* text-sm → 14px */
   padding-top: 1.5rem;         /* py-6 = 24px */
